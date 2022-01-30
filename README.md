@@ -9,11 +9,11 @@ Open-source Flask Sample built on top of `flask-dance` library. The project impl
   - **Github** 
   - **Twitter**
 - `SQLite` Persistence, `SQLAlchemy` ORM
-- Free [Support](https://appseed.us/support): email and [Discord](https://discord.gg/fZC6hup).
+- Free [Support](https://appseed.us/support): email and [Discord](https://discord.gg/fZC6hup) (1k+ community).
 
 <br />
 
-![Flask Social Login - Free sample provided by AppSeed.](https://user-images.githubusercontent.com/51070104/135398234-06a43c1a-cd0a-45ad-accc-de45061d8945.png)
+![Flask Social Login - Free sample provided by AppSeed.](https://user-images.githubusercontent.com/51070104/151698261-659e49e4-46e0-4ea4-8412-2bc61e6aa8ca.jpg)
 
 <br />
 
@@ -140,6 +140,26 @@ Once the user is authenticated, all available information can be accessed via `/
   "url": "https://api.github.com/users/app-generator"
 }
 ```
+
+<br />
+
+## Sample SShots
+
+> Successfull `Github` Login
+
+![Successfull Github Login](https://user-images.githubusercontent.com/51070104/151698288-9693f769-10a8-4df6-9aa6-8ba817aceada.jpg)
+
+<br />
+
+> Successfull `TWitter` Login
+
+![Successfull Twitter Login](https://user-images.githubusercontent.com/51070104/151698313-700023e4-99ea-4ef4-b4bc-d4083ec63ab0.jpg)
+
+<br />
+
+> `Github` account information
+
+![Github accoutn info - JSON format.](https://user-images.githubusercontent.com/51070104/151698331-a1ce35b6-1465-4da4-ba03-f227391b5cc8.jpg)
 
 <br />
 
