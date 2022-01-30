@@ -26,8 +26,11 @@ def ping():
 
     if github.authorized:
         return github.get("/user").json()
-    else:        
-        return jsonify(ping="not authenticated")
+    
+    if twitter.authorized:
+        return twitter.get("account/settings.json").json()
+
+    return jsonify(ping="not authenticated")
 
 @app.route("/")
 def homepage():
