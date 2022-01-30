@@ -46,7 +46,6 @@ $ # .\env\Scripts\activate
 > **Step #3** - Install dependencies
 
 ```bash
-$ # Install requirements
 $ pip3 install -r requirements.txt
 ```
 
