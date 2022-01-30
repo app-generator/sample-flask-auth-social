@@ -6,10 +6,10 @@ Open-source Flask Sample built on top of `flask-dance` library. The project impl
 
 - Up-to-date [dependencies](./requirements.txt): **Flask 2.0.1**
 - `OPENID` Social login over [Flask Dance](https://pypi.org/project/Flask-Dance/)
-  - Github 
-  - Twitter
-- SQLite Persistence
-- Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
+  - **Github** 
+  - **Twitter**
+- `SQLite` Persistence, `SQLAlchemy` ORM
+- Free [Support](https://appseed.us/support): email and [Discord](https://discord.gg/fZC6hup).
 
 <br />
 
