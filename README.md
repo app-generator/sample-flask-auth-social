@@ -111,7 +111,7 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> 👉 **Step #8** - Start the project (HTTPS)
+> 👉 **Start the project** Using HTTPS 
 
 ```bash
 $ flask run --cert=adhoc
