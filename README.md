@@ -2,9 +2,9 @@
 
 Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter.
 
-> 
+> Features:
 
-- Up-to-date [dependencies](./requirements.txt): **Flask 2.0.1**
+- `Up-to-date dependencies`
 - `OPENID` Social login over [Flask Dance](https://pypi.org/project/Flask-Dance/)
   - **Github** 
   - **Twitter**
