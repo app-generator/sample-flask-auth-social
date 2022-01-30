@@ -1,10 +1,10 @@
-# Flask Social Login 
+# [Flask Social Login for Twitter and Github](https://blog.appseed.us/flask-social-authentication-github-twitter/)
 
 Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter - Originally coded by *[TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)*. 
 
 <br />
 
-> Features:
+> ✨ Features:
 
 - `Up-to-date dependencies`
 - `OPENID` Social login over [Flask Dance](https://pypi.org/project/Flask-Dance/)
@@ -19,9 +19,9 @@ Open-source Flask Sample built on top of `flask-dance` library. The project impl
 
 <br />
 
-## Build from sources
+## ✨ Build from sources
 
-> **Step #1** - Clone sources (this repo)
+> 👉 **Step #1** - Clone sources (this repo)
 
 ```bash
 $ # Clone the sources
@@ -31,7 +31,7 @@ $ cd flask-social-login-v2
 
 <br />
 
-> **Step #2** - Create a virtual environment
+> 👉 **Step #2** - Create a virtual environment
 
 ```bash
 $ # Virtualenv modules installation (Unix based systems)
@@ -45,7 +45,7 @@ $ # .\env\Scripts\activate
 
 <br />
 
-> **Step #3** - Install dependencies
+> 👉 **Step #3** - Install dependencies
 
 ```bash
 $ pip3 install -r requirements.txt
@@ -53,7 +53,7 @@ $ pip3 install -r requirements.txt
 
 <br />
 
-> **Step #4** - Set Up Environment
+> 👉 **Step #4** - Set Up Environment
 
 ```bash
 $ # Set the FLASK_APP environment variable
@@ -64,7 +64,7 @@ $ (Powershell) $env:FLASK_APP = ".\run.py"
 
 <br />
 
-> **Step #5** - (optional) Enable DEBUG Environment (local development)
+> 👉 **Step #5** - (optional) Enable DEBUG Environment (local development)
 
 ```bash
 $ # Set up the DEBUG environment
@@ -75,7 +75,7 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> **Github Setup** - [Create an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
+> 👉 **Github Setup** - [Create an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
 
 - SignIN to `Github`
 - Access `Settings` -> `Developer Settings` -> `OAuth Apps`
@@ -88,7 +88,7 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> **Twitter Setup** - [Create an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps) 
+> 👉 **Twitter Setup** - [Create an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps) 
 
 - SignIN to `Twitter`
 - Access `Developer Section` -> https://developer.twitter.com/en/portal/projects-and-apps
@@ -100,7 +100,7 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> **Update Environment** - Rename `.env.sample` to `.env` and edit the file
+> 👉 **Update Environment** - Rename `.env.sample` to `.env` and edit the file
 
 - For GITHUB Login
   - `GITHUB_ID` - value provided by `Github Setup`
@@ -111,7 +111,7 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> **Step #8** - Start the project (HTTPS)
+> 👉 **Step #8** - Start the project (HTTPS)
 
 ```bash
 $ flask run --cert=adhoc
@@ -123,7 +123,7 @@ $ # Access the app: HTTPS://127.0.0.1:5000/
 
 <br />
 
-## Account Details
+## ✨ Account Details
 
 Once the user is authenticated, all available information can be accessed via `/ping` route:
 
@@ -144,7 +144,7 @@ Once the user is authenticated, all available information can be accessed via `/
 
 <br />
 
-## Sample SShots
+## ✨ Sample SShots
 
 > Successfull `Github` Login
 
@@ -164,7 +164,7 @@ Once the user is authenticated, all available information can be accessed via `/
 
 <br />
 
-## Credits
+## ✨ Credits
 
 - Originally coded by [TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)
 - [Flask-Dance](https://flask-dance.readthedocs.io/en/latest/) - The library that implements the hard work  
@@ -172,4 +172,4 @@ Once the user is authenticated, all available information can be accessed via `/
 <br />
 
 --- 
-Flask Social Login - Free sample provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
+**[Flask Social Login for Github and Twitter](https://blog.appseed.us/flask-social-authentication-github-twitter/)** - Free sample provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
