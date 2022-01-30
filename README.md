@@ -1,6 +1,8 @@
 # Flask Social Login 
 
-Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter.
+Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter.  
+
+<br />
 
 > Features:
 
@@ -11,6 +13,10 @@ Open-source Flask Sample built on top of `flask-dance` library. The project impl
 - `SQLite` Persistence, `SQLAlchemy` ORM
 - Free [Support](https://appseed.us/support): email and [Discord](https://discord.gg/fZC6hup) (1k+ community).
 
+<br />
+
+> Note: Originally coded by [TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)   
+ 
 <br />
 
 ![Flask Social Login - Free sample provided by AppSeed.](https://user-images.githubusercontent.com/51070104/151698261-659e49e4-46e0-4ea4-8412-2bc61e6aa8ca.jpg)
