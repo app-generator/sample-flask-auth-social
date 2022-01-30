@@ -1,4 +1,9 @@
-# main.py
+# -*- encoding: utf-8 -*-
+"""
+Copyright (c) 2019 - present AppSeed.us
+"""
+
+import os
 
 from flask import Flask, jsonify, redirect, render_template, url_for
 from flask_dance.contrib.github import github
@@ -11,7 +16,10 @@ from app.oauth import github_blueprint, twitter_blueprint
 
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///./users.db"
-app.secret_key = "supersecretkey"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
+app.secret_key = os.getenv("SECRET_KEY")
+
 app.register_blueprint(github_blueprint, url_prefix="/login")
 app.register_blueprint(twitter_blueprint, url_prefix="/login")
 
@@ -34,7 +42,21 @@ def ping():
 
 @app.route("/")
 def homepage():
-    return render_template("index.html")
+
+    provider       = None 
+    social_account = None
+    
+    if github.authorized:
+        
+        social_account = github.get("/user").json()['html_url']
+        provider       = 'Github' 
+    
+    if twitter.authorized:
+
+        social_account = 'https://twitter.com/' + twitter.get("account/settings.json").json()['screen_name']
+        provider       = 'Twitter' 
+
+    return render_template("index.html", social_account=social_account, provider=provider)
 
 @app.route("/login/github")
 def login_github():

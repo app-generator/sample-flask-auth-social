@@ -8,8 +8,14 @@
 
     {% if current_user.is_authenticated %}
 
-      <h1>You are logged in as {{current_user.username}}</h1>
-      <br><br>
+      <h3>
+        You are logged in as <a target="_blank" href="{{ social_account }}">{{current_user.username}}</a>
+      </h3>
+      <br />
+        <h4>
+          OAuth Provider: {{ provider }}
+        </h4>
+      <br />
       <a href="{{url_for('logout')}}" class="btn btn-danger">Logout</a>
     
     {% else %}

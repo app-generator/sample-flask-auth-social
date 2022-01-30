@@ -1,11 +1,14 @@
-# Flask Social Login
+# Flask Social Login 
 
-Open-source Flask sample built on top of `flask-dance` library. The project showcases the social login for Github - Features: 
+Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter.
+
+> 
 
 - Up-to-date [dependencies](./requirements.txt): **Flask 2.0.1**
 - `OPENID` Social login over [Flask Dance](https://pypi.org/project/Flask-Dance/)
-  - Github Login
-  - Google Login (WIP) 
+  - Github 
+  - Twitter
+- SQLite Persistence
 - Support via **Github** (issues tracker) and [Discord](https://discord.gg/fZC6hup).
 
 <br />
@@ -60,7 +63,18 @@ $ (Powershell) $env:FLASK_APP = ".\run.py"
 
 <br />
 
-> **Step #5** - [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app) (on Github)
+> **Step #5** - (optional) Enable DEBUG Environment (local development)
+
+```bash
+$ # Set up the DEBUG environment
+$ (Unix/Mac) export FLASK_ENV=development
+$ (Windows) set FLASK_ENV=development
+$ (Powershell) $env:FLASK_ENV = "development"
+```
+
+<br />
+
+> **Github Setup** - [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
 
 - SignIN to Github
 - Access `Settings` -> `Developer Settings` -> `OAuth Apps`
@@ -73,21 +87,27 @@ $ (Powershell) $env:FLASK_APP = ".\run.py"
 
 <br />
 
-> **Step #6** - Rename `.env.sample` to `.env` and edit the file
+> **Twitter Setup** - [Creating an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps) 
 
-- `GITHUB_OAUTH_CLIENT_ID` - value provided by Github (step #5)
-- `GITHUB_OAUTH_CLIENT_SECRET` - value provided by Github (step #5)
+- SignIN to Twitter
+- Access `Developer Section` -> https://developer.twitter.com/en/portal/projects-and-apps
+- Create a new APP
+- Edit User authentication settings
+  - Check `OAuth 1.0a`
+  - (mandatory) `HomePage`: `https://localhost:5000`
+  - (mandatory) `Authorization callback URL`: `https://localhost:5000/login/twitter/authorized`
+  - Generate a new `secret key`
 
 <br />
 
-> **Step #7** - (optional) Enable DEBUG Environment (local development)
+> **Update Environment** - Rename `.env.sample` to `.env` and edit the file
 
-```bash
-$ # Set up the DEBUG environment
-$ (Unix/Mac) export FLASK_ENV=development
-$ (Windows) set FLASK_ENV=development
-$ (Powershell) $env:FLASK_ENV = "development"
-```
+- For GITHUB Login
+  - `GITHUB_ID` - value provided by `Github Setup`
+  - `GITHUB_SECRET` - value provided by `Github Setup`
+- For TWitter Login
+  - `TWITTER_ID` - value provided by `Twitter Setup`
+  - `TWITTER_SECRET` - value provided by `Twitter Setup`
 
 <br />
 
@@ -96,11 +116,40 @@ $ (Powershell) $env:FLASK_ENV = "development"
 ```bash
 $ flask run --cert=adhoc
 $
-$ # Access the app in browser: HTTPS://127.0.0.1:5000/
+$ # Access the app: HTTPS://127.0.0.1:5000/
+```
+
+**Important:** The `--cert=adhoc` will force the https protocol
+
+<br />
+
+## Account Details
+
+Once the user is authenticated, all available information can be accessed via `/ping` route:
+
+> Github sample (truncated): `https://localhost:5000/ping` 
+
+```json
+{
+  "avatar_url": "https://avatars.githubusercontent.com/u/51070104?v=4", 
+  "bio": "App Generator and Boilerplate Code.", 
+  "blog": "https://appseed.us/app-generator", 
+  "company": "AppSeed", 
+  "created_at": "2019-05-27T04:55:15Z", 
+  "followers": 777, 
+  "public_repos": 495, 
+  "url": "https://api.github.com/users/app-generator"
+}
 ```
 
 <br />
 
----
+## Credits
 
+- Originally coded by [TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)
+- [Flask-Dance](https://flask-dance.readthedocs.io/en/latest/) - The library that implements the hard work  
+
+<br />
+
+--- 
 Flask Social Login - Free sample provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
