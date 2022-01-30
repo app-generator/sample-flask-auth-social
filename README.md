@@ -1,6 +1,6 @@
 # Flask Social Login 
 
-Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter - `Originally coded by [TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)`. 
+Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter - Originally coded by *[TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)*. 
 
 <br />
 
