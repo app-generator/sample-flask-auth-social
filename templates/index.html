@@ -3,12 +3,17 @@
 {% extends '_base.html' %}
 
 {% block content %}
+
   <div style="text-align:center;">
+
     {% if current_user.is_authenticated %}
+
       <h1>You are logged in as {{current_user.username}}</h1>
       <br><br>
       <a href="{{url_for('logout')}}" class="btn btn-danger">Logout</a>
+    
     {% else %}
+
       <!-- GitHub button starts here -->
       <a href="{{url_for('login_github')}}"  class="btn btn-secondary">
         <i class="fa fa-github fa-fw"></i>
@@ -22,6 +27,9 @@
         <span>Login with Twitter</span>
       </a>
       <!-- Twitter button ends here -->
+
     {% endif %}
+
   </div>
+
 {% endblock content %}

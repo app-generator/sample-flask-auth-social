@@ -21,25 +21,26 @@ login_manager.init_app(app)
 with app.app_context():
     db.create_all()
 
-
 @app.route("/ping")
 def ping():
-    return jsonify(ping="pong")
 
+    if github.authorized:
+        return github.get("/user").json()
+    else:        
+        return jsonify(ping="not authenticated")
 
 @app.route("/")
 def homepage():
     return render_template("index.html")
 
-
 @app.route("/login/github")
 def login_github():
+    
     if not github.authorized:
         return redirect(url_for("github.login"))
     res = github.get("/user")
     username = res.json()["login"]
     return f"You are @{username} on GitHub"
-
 
 @app.route("/login/twitter")
 def login_twitter():
@@ -49,13 +50,11 @@ def login_twitter():
     username = res.json()["screen_name"]
     return f"You are @{username} on Twitter"
 
-
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
     return redirect(url_for("homepage"))
-
 
 if __name__ == "__main__":
     app.run(debug=True)
