@@ -73,9 +73,9 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> **Github Setup** - [Creating an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
+> **Github Setup** - [Create an OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps/creating-an-oauth-app)
 
-- SignIN to Github
+- SignIN to `Github`
 - Access `Settings` -> `Developer Settings` -> `OAuth Apps`
 - Edit your OAuth App
   - `App Name`
@@ -86,16 +86,15 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> **Twitter Setup** - [Creating an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps) 
+> **Twitter Setup** - [Create an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps) 
 
-- SignIN to Twitter
+- SignIN to `Twitter`
 - Access `Developer Section` -> https://developer.twitter.com/en/portal/projects-and-apps
 - Create a new APP
 - Edit User authentication settings
   - Check `OAuth 1.0a`
   - (mandatory) `HomePage`: `https://localhost:5000`
   - (mandatory) `Authorization callback URL`: `https://localhost:5000/login/twitter/authorized`
-  - Generate a new `secret key`
 
 <br />
 
