@@ -1,4 +1,4 @@
-# [Flask Social Login for Twitter and Github](https://blog.appseed.us/flask-social-authentication-github-twitter/)
+# [Flask Social Login (Twitter & Github)](https://blog.appseed.us/flask-social-authentication-github-twitter/)
 
 Open-source Flask Sample built on top of `flask-dance` library. The project implements the social login for Github and Twitter - Originally coded by *[TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)*. 
 
@@ -160,7 +160,7 @@ Once the user is authenticated, all available information can be accessed via `/
 
 > `Github` account information
 
-![Github accoutn info - JSON format.](https://user-images.githubusercontent.com/51070104/151698331-a1ce35b6-1465-4da4-ba03-f227391b5cc8.jpg)
+![Github account info - JSON format.](https://user-images.githubusercontent.com/51070104/151698331-a1ce35b6-1465-4da4-ba03-f227391b5cc8.jpg)
 
 <br />
 
@@ -172,4 +172,4 @@ Once the user is authenticated, all available information can be accessed via `/
 <br />
 
 --- 
-**[Flask Social Login for Github and Twitter](https://blog.appseed.us/flask-social-authentication-github-twitter/)** - Free sample provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
+[Flask Social Login (Twitter & Github)](https://blog.appseed.us/flask-social-authentication-github-twitter/) - Free sample provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
