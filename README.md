@@ -25,8 +25,8 @@ Open-source Flask Sample built on top of `flask-dance` library. The project impl
 
 ```bash
 $ # Clone the sources
-$ git clone https://github.com/app-generator/flask-social-login-v2.git
-$ cd flask-social-login-v2
+$ git clone https://github.com/app-generator/sample-flask-auth-social.git
+$ cd sample-flask-auth-social
 ```
 
 <br />
