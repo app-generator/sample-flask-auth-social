@@ -1,6 +1,6 @@
 # [Flask Social Login (Twitter & Github)](https://blog.appseed.us/flask-social-authentication-github-twitter/)
 
-Open-source Flask Sample built on top of `flask-dance` library. The project implements the **[social login for Github and Twitter](https://blog.appseed.us/flask-social-authentication-github-twitter/)** - Originally coded by *[TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)*. 
+Open-source Flask Sample built on top of `flask-dance` library. The project implements the **[social login for Github and Twitter](https://blog.appseed.us/flask-social-authentication-github-twitter/)** - Originally coded by _[TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)_.
 
 <br />
 
@@ -8,7 +8,7 @@ Open-source Flask Sample built on top of `flask-dance` library. The project impl
 
 - `Up-to-date dependencies`
 - `OPENID` Social login over [Flask Dance](https://pypi.org/project/Flask-Dance/)
-  - **Github** 
+  - **Github**
   - **Twitter**
 - `SQLite` Persistence, `SQLAlchemy` ORM
 - Free [Support](https://appseed.us/support): email and [Discord](https://discord.gg/fZC6hup) (1k+ community).
@@ -88,15 +88,15 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> 👉 **Twitter Setup** - [Create an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps) 
+> 👉 **Twitter Setup** - [Create an OAuth App](https://developer.twitter.com/en/portal/projects-and-apps)
 
 - SignIN to `Twitter`
 - Access `Developer Section` -> https://developer.twitter.com/en/portal/projects-and-apps
 - Create a new APP
 - Edit User authentication settings
   - Check `OAuth 1.0a`
-  - (mandatory) `HomePage`: `https://localhost:5000`
-  - (mandatory) `Authorization callback URL`: `https://localhost:5000/login/twitter/authorized`
+  - (mandatory) `HomePage`: `https://www.localhost:5000`
+  - (mandatory) `Authorization callback URL`: `https://127.0.0.1:5000/login/twitter/authorized`
 
 <br />
 
@@ -111,7 +111,7 @@ $ (Powershell) $env:FLASK_ENV = "development"
 
 <br />
 
-> 👉 **Start the project** Using HTTPS 
+> 👉 **Start the project** Using HTTPS
 
 ```bash
 $ flask run --cert=adhoc
@@ -127,17 +127,17 @@ $ # Access the app: HTTPS://127.0.0.1:5000/
 
 Once the user is authenticated, all available information can be accessed via `/ping` route:
 
-> Github sample (truncated): `https://localhost:5000/ping` 
+> Github sample (truncated): `https://localhost:5000/ping`
 
 ```json
 {
-  "avatar_url": "https://avatars.githubusercontent.com/u/51070104?v=4", 
-  "bio": "App Generator and Boilerplate Code.", 
-  "blog": "https://appseed.us/app-generator", 
-  "company": "AppSeed", 
-  "created_at": "2019-05-27T04:55:15Z", 
-  "followers": 777, 
-  "public_repos": 495, 
+  "avatar_url": "https://avatars.githubusercontent.com/u/51070104?v=4",
+  "bio": "App Generator and Boilerplate Code.",
+  "blog": "https://appseed.us/app-generator",
+  "company": "AppSeed",
+  "created_at": "2019-05-27T04:55:15Z",
+  "followers": 777,
+  "public_repos": 495,
   "url": "https://api.github.com/users/app-generator"
 }
 ```
@@ -167,9 +167,10 @@ Once the user is authenticated, all available information can be accessed via `/
 ## ✨ Credits
 
 - Originally coded by [TestDriven.IO](https://github.com/testdrivenio/flask-social-auth)
-- [Flask-Dance](https://flask-dance.readthedocs.io/en/latest/) - The library that implements the hard work  
+- [Flask-Dance](https://flask-dance.readthedocs.io/en/latest/) - The library that implements the hard work
 
 <br />
 
---- 
+---
+
 [Flask Social Login (Twitter & Github)](https://blog.appseed.us/flask-social-authentication-github-twitter/) - Free sample provided by **AppSeed [App Generator](https://appseed.us/app-generator)**.
